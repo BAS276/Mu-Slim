@@ -247,7 +247,7 @@ function getSurahs() {
             let ayahs = document.querySelector(".ayah");
             surahtitles.forEach((title, index) => {
                 title.onclick = function () {
-                    fetch(`http://api.alquran.cloud/v1/surah/${index + 1}`)
+                    fetch(`https://api.alquran.cloud/v1/surah/${index + 1}`)
                         .then(response => response.json())
                         .then(data => {
                             ayahs.innerHTML += ``
