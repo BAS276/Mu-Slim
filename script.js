@@ -228,7 +228,7 @@ function playerSurah(surahMp3) {
 let moshafe = document.querySelector(".moshafe");
 getSurahs();
 function getSurahs() {
-    fetch("http://api.alquran.cloud/v1/meta")
+    fetch("httpsadd://api.alquran.cloud/v1/meta")
         .then(response => response.json())
         .then(data => {
             let surahs = data.data.surahs.references;
